@@ -26,7 +26,8 @@ Time spent: **6** hours spent in total
   - [x] GIF Walkthrough: ![](https://github.com/hetobias/Week7-WebSecurity/blob/master/shortcode%20tag%20xss.gif)
   - [x] Steps to recreate: 
   - 1. Create or go to exisiting post, make sure you are able to comment on it.
-  - 2. Copy and paste this : ```<a href = "XSS" onmouseover=alert("hello") rel="nofollow">try me</a>```
+  - 2. Copy and paste this : ```<a href = "XSS" onmouseover=alert("hello") rel="nofollow">try me</a>``` into the comment section
+  - 3. Click "Post Comment" put your mouse over "try me" on the new comment.
   - [x] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/f72b21af23da6b6d54208e5c1d65ececdaa109c8)
 1. (Required) Vulnerability Name or ID
