@@ -2,7 +2,7 @@
 
 Time spent: **6** hours spent in total
 
-> Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
+> Objective: Find, analyze, recreate, and document **three** affecting an old version of WordPress
 
 ## Pentesting Report
 
@@ -18,7 +18,7 @@ Time spent: **6** hours spent in total
   - 3. Click "Post Comment"
   - [x] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/7ab65139c6838910426567849c7abed723932b87)
-1. (Required) Authenticated Shortcode Tags XSS
+2. (Required) Authenticated Shortcode Tags XSS
   - [x] Summary: 
     - Vulnerability types: XSS
     - Tested in version: 4.2
@@ -30,37 +30,18 @@ Time spent: **6** hours spent in total
   - 3. Click "Post Comment" put your mouse over "try me" on the new comment.
   - [x] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/f72b21af23da6b6d54208e5c1d65ececdaa109c8)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+3. (Required) Vulnerability Name or ID
+  - [x] Summary: 
+    - Vulnerability types: User Enumeration
+    - Tested in version: 4.2
+    - Fixed in version: 4.4
+  - [x] GIF Walkthrough: ![](https://github.com/hetobias/Week7-WebSecurity/blob/master/user%20enumeration.gif)
+  - [x] Steps to recreate: 
+  - 1. Go to the login page for WordPress
+  - 2. Enter a random username and password, it should tell you if the username exists or not.
+  - 3. Enter a existing username (admin) and enter a wrong password. It should tell you the password was wrong for "admin".
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
-
-## Assets
-
-List any additional assets, such as scripts or files
 
 ## Resources
 
@@ -71,7 +52,7 @@ GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+I encountered a problem while trying to access pages and posts that are created in WordPress which I fixed by going to the settings tab in admin and change the routes of the permalinks. 
 
 ## License
 
