@@ -30,7 +30,7 @@ Time spent: **6** hours spent in total
   - 3. Click "Post Comment" put your mouse over "try me" on the new comment.
   - [x] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/f72b21af23da6b6d54208e5c1d65ececdaa109c8)
-3. (Required) Vulnerability Name or ID
+3. (Required) User Enumeration
   - [x] Summary: 
     - Vulnerability types: User Enumeration
     - Tested in version: 4.2
