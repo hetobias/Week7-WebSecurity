@@ -1,29 +1,34 @@
 # Project 7 - WordPress Pentesting
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+1. (Required) Authenticated Cross-Site Scripting (XSS)
+  - [x] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.6
+  - [x] GIF Walkthrough: ![](https://github.com/hetobias/Week7-WebSecurity/blob/master/authenticated%20cross-site%20scripting%20xss.gif)
+  - [x] Steps to recreate: 
+  - 1. Create or go to exisiting post, make sure you are able to comment on it.
+  - 2. Copy and paste this: ```=<svg onload=alert("hello_world")>``` into the comment section
+  - 3. Click "Post Comment"
+  - [x] Affected source code:
+    - [Link 1](https://github.com/WordPress/WordPress/commit/7ab65139c6838910426567849c7abed723932b87)
+1. (Required) Authenticated Shortcode Tags XSS
+  - [x] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.7.2
+  - [x] GIF Walkthrough: ![](https://github.com/hetobias/Week7-WebSecurity/blob/master/shortcode%20tag%20xss.gif)
+  - [x] Steps to recreate: 
+  - 1. Create or go to exisiting post, make sure you are able to comment on it.
+  - 2. Copy and paste this : ```<a href = "XSS" onmouseover=alert("hello") rel="nofollow">try me</a>```
+  - [x] Affected source code:
+    - [Link 1](https://github.com/WordPress/WordPress/commit/f72b21af23da6b6d54208e5c1d65ececdaa109c8)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
